@@ -26,7 +26,7 @@ export default function Hero() {
             not just websites
           </h1>
           <p className="text-muted-foreground max-w-xl font-mono text-base md:text-lg">
-            Full-stack developer // Cloud Architect // Problem solver.
+            Full-stack developer // Cloud Engineer // Problem solver.
             <br />
             Optimizing for latency, building for scale.
           </p>

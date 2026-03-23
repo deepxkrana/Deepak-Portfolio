@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const categories = [
   { title: "Frontend", items: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React"] },
   { title: "Backend", items: ["Node.js", "MySQL", "Supabase", "Firebase", "MongoDB"] },
-  { title: "DevOps & Cloud", items: ["Docker", "Kubernetes", "GCP", "AWS"] },
+  { title: "DevOps & Cloud", items: ["Docker", "Kubernetes", "GCP", "Git/Github","CI/CD"] },
 ];
 
 export default function TechStack() {

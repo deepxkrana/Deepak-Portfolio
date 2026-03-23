@@ -15,15 +15,15 @@ export default function About() {
           </h2>
           <div className="space-y-4 text-muted-foreground font-mono text-sm leading-relaxed">
             <p>
-              I build backend systems, APIs, and cloud infrastructure that
-              handle real-world scale. Clean architecture over clever hacks.
+              I build Full Stack Applications, and cloud infrastructure that
+              handle real-world scale and performance. Clean architecture over clever hacks.
             </p>
             <p>
-              Currently deepening my expertise in distributed systems,
+              Currently deepening my expertise in Automation,distributed systems,
               container orchestration, and performance engineering.
             </p>
             <p>
-              Goal: ship software that developers trust and users never think
+              Goal: ship software that developers trust, solves the real-world problems and that users never think
               about — because it just works.
             </p>
           </div>

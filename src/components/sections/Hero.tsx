@@ -69,8 +69,18 @@ export default function Hero() {
       <motion.div
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        className="absolute bottom-8 inset-x-0 flex justify-center font-mono text-[10px] text-muted-foreground uppercase tracking-[0.2em]"
+        className="absolute bottom-8 inset-x-0 flex flex-col items-center gap-1 font-mono text-[10px] text-muted-foreground uppercase tracking-[0.2em]"
       >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 32 32"
+          className="text-primary"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M32,16.016l-5.672-5.664c0,0-3.18,3.18-6.312,6.312V0h-8.023v16.664l-6.32-6.32L0,16.016L16,32L32,16.016z" />
+        </svg>
         Scroll to explore
       </motion.div>
     </section>

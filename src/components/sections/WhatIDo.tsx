@@ -1,20 +1,20 @@
 import { motion } from "framer-motion";
-import { Server, Monitor, Container } from "lucide-react";
+import { Server, Monitor, Container, Cloud } from "lucide-react";
 
 const services = [
   {
-    icon: Server,
-    title: "Backend",
-    desc: "APIs, distributed systems, and heavy-duty logic.",
-  },
-  {
-    icon: Monitor,
+    icons: [Monitor],
     title: "Frontend",
     desc: "High-performance UIs with pixel-perfect precision.",
   },
   {
-    icon: Container,
-    title: "DevOps",
+    icons: [Server],
+    title: "Backend",
+    desc: "APIs, distributed systems, and heavy-duty logic.",
+  },
+  {
+    icons: [Container, Cloud],
+    title: "DevOps & Cloud",
     desc: "Automated deployments and cloud infrastructure.",
   },
 ];
@@ -31,7 +31,11 @@ export default function WhatIDo() {
           transition={{ delay: i * 0.1, duration: 0.4 }}
           className="bg-background p-10 group"
         >
-          <s.icon className="text-primary mb-4" size={24} />
+          <div className="flex gap-2 mb-4">
+            {s.icons.map((Icon, idx) => (
+              <Icon key={idx} className="text-primary" size={24} />
+            ))}
+          </div>
           <h4 className="font-bold uppercase mb-2">{s.title}</h4>
           <p className="text-muted-foreground text-sm font-mono">{s.desc}</p>
         </motion.div>

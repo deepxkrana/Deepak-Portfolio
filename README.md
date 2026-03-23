@@ -40,12 +40,16 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Open [http://deepxkrana.vercel.app) in your browser.
 
 ### Build
 
 ```bash
+# Production build
 npm run build
+
+# Development build
+npm run build:dev
 ```
 
 Output is generated in the `dist/` directory.
@@ -78,9 +82,19 @@ npm run lint
 src/
 ├── components/
 │   ├── sections/     # Page sections (Hero, About, Projects, etc.)
-│   └── ui/           # Reusable UI components (shadcn/ui)
+│   ├── ui/           # Reusable UI components (shadcn/ui)
+│   └── NavLink.tsx   # Navigation link component
 ├── hooks/            # Custom React hooks
 ├── lib/              # Utility functions
-├── pages/            # Route-level pages
+├── pages/            # Route-level pages (Index, NotFound)
+├── test/             # Unit test files and setup
 └── main.tsx          # App entry point
+```
+
+## Path Aliases
+
+The `@` alias maps to the `src/` directory:
+
+```ts
+import { something } from "@/components/ui/button";
 ```

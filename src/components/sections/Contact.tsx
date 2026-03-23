@@ -6,7 +6,7 @@ export default function Contact() {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("deepak@example.com");
+    navigator.clipboard.writeText("deepakrrana5@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -38,7 +38,7 @@ export default function Contact() {
               {copied ? "Copied!" : "Copy Email"}
             </button>
             <a
-              href="https://github.com"
+              href="https://github.com/deepxkrana/"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-border px-6 py-3 font-mono text-sm hover:bg-secondary transition-colors flex items-center gap-2"
@@ -47,7 +47,7 @@ export default function Contact() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/deepxkrana"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-border px-6 py-3 font-mono text-sm hover:bg-secondary transition-colors flex items-center gap-2"

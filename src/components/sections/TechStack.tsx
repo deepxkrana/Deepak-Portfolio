@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 const categories = [
-  { title: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS"] },
-  { title: "Backend", items: ["Node.js", "Express", "Go", "PostgreSQL"] },
-  { title: "DevOps", items: ["Docker", "Kubernetes", "AWS", "Terraform"] },
+  { title: "Frontend", items: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React"] },
+  { title: "Backend", items: ["Node.js", "MySQL", "Supabase", "Firebase", "MongoDB"] },
+  { title: "DevOps & Cloud", items: ["Docker", "Kubernetes", "GCP", "AWS"] },
 ];
 
 export default function TechStack() {
@@ -11,7 +11,7 @@ export default function TechStack() {
     <section id="stack" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-sm font-mono text-primary mb-12 uppercase tracking-[0.3em]">
-          System_Architecture
+          Tech_Stack
         </h2>
         <div className="relative grid gap-12 md:grid-cols-3 md:items-start">
           {categories.map((cat, idx) => (

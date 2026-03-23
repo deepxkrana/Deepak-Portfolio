@@ -3,35 +3,51 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    name: "Nexus DB",
+    name: "Rank",
     problem: "Distributed state synchronization for edge functions.",
     stack: ["Go", "Redis", "AWS"],
-    status: "LIVE" as const,
-    github: "#",
-    demo: "#",
-  },
-  {
-    name: "Aether UI",
-    problem: "High-performance component library for data-heavy apps.",
-    stack: ["Next.js", "TypeScript", "Tailwind"],
-    status: "EXPERIMENTAL" as const,
-    github: "#",
-    demo: "#",
-  },
-  {
-    name: "CloudPulse",
-    problem: "Real-time monitoring dashboard for microservices.",
-    stack: ["React", "Node.js", "Docker"],
-    status: "LIVE" as const,
-    github: "#",
-    demo: "#",
-  },
-  {
-    name: "ByteForge CLI",
-    problem: "Scaffolding tool for full-stack project boilerplate.",
-    stack: ["Node.js", "CLI", "Templates"],
     status: "BUILDING" as const,
-    github: "#",
+    github: "https://github.com/deepxkrana/Rank-P2",
+    demo: "https://rank-p2.vercel.app/",
+  },
+  {
+    name: "Director`s Portfolio",
+    problem: "An Industry Standard Portfolio for a TV Director",
+    stack: ["HTML", "Tailwind CSS", "JavaScript", "Framer Motion", ],
+    status: "LIVE" as const,
+    github: "https://github.com/deepxkrana/Prabhat_Rawat",
+    demo: "https://prabhatrawat.vercel.app/",
+  },
+  {
+    name: "FarmQuest",
+    problem: "A Gamified Learning Platform for Farmers",
+    stack: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
+    status: "LIVE" as const,
+    github: "https://github.com/deepxkrana/FarmQuest",
+    demo: "https://farm-quest-pearl.vercel.app/",
+  },
+  {
+    name: "Secure File Management System",
+    problem: "A Browser based Secure File Management System for storing and sharing files.",
+    stack: ["Node.js", "CLI", "Templates"],
+    status: "EXPERIMENTAL" as const,
+    github: "https://github.com/deepxkrana/SFMS",
+    demo: "#",
+  },
+  {
+    name: "AI Based Injury Prevention Advisor",
+    problem: "An AI Based Injury Prevention Advisor",
+    stack: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Gemini"],
+    status: "LIVE" as const,
+    github: "https://github.com/deepxkrana/IPA",
+    demo: "https://injurypreventionadvisor.vercel.app/",
+  },
+  {
+    name: "Konnect",
+    problem: "A Social Media Overlay for Searching Users on Social Media Platforms",
+    stack: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Node.Js", "Supabase Auth", "PostgreSQL"],
+    status: "EXPERIMENTAL" as const,
+    github: "https://github.com/deepxkrana/Konnect",
     demo: "#",
   },
 ];
@@ -48,7 +64,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-end mb-12 border-b border-border pb-6">
           <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tighter">
-            Selected_Logs
+            Projects_Logs
           </h2>
           <span className="font-mono text-muted-foreground text-sm">
             Total_Count: {String(projects.length).padStart(2, "0")}

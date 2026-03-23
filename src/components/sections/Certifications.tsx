@@ -68,7 +68,7 @@ const achievements = [
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-24 px-6 border-t border-border">
+    <section id="certificates" className="py-24 px-6 border-t border-border">
       <div className="max-w-7xl mx-auto">
         
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12">

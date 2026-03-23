@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
+import Terminal from "./Terminal";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6">
-      <div className="max-w-3xl mx-auto">
+    <section id="about">
+      <Terminal />
+      <div className="max-w-3xl mx-auto pb-24 pt-12 px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

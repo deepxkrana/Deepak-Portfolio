@@ -3,29 +3,40 @@ import { Server, Cloud, Database } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-start px-6 pt-14 overflow-hidden">
-      <div className="absolute inset-0 grid-bg [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent)] -z-10" />
+    <section className="relative z-0 min-h-screen flex flex-col justify-center items-center px-6 pt-14 overflow-hidden">
+      {/* Background Grid */}
+      <div className="absolute inset-0 grid-bg [mask-image:radial-gradient(ellipse_at_center,black_70%,transparent_100%)] -z-10" />
+      
+      {/* Abstract Floating Shapes from Reference Image */}
+      <div className="absolute top-[15%] right-[20%] w-24 h-24 md:w-32 md:h-32 bg-white/5 border border-white/10 backdrop-blur-sm -z-10" />
+      <div className="absolute top-[30%] right-[10%] w-12 h-12 md:w-16 md:h-16 bg-white/5 border border-white/10 backdrop-blur-sm -z-10" />
+      <div className="absolute bottom-[20%] left-[10%] w-20 h-20 md:w-32 md:h-32 bg-white/5 border border-white/10 backdrop-blur-sm -z-10" />
+      <div className="absolute bottom-[40%] left-[15%] w-8 h-8 md:w-12 md:h-12 bg-white/5 border border-white/10 backdrop-blur-sm -z-10" />
 
       <div className="max-w-5xl w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="space-y-4"
+          className="space-y-4 flex flex-col items-center text-center"
         >
           <span className="font-mono text-accent text-sm tracking-widest uppercase">
             [ system.status: operational ]
           </span>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold uppercase leading-[0.9] tracking-tighter">
-            building{" "}
-            <span className="glitch text-primary italic" data-text="scalable">
-              scalable
-            </span>{" "}
-            systems
+            Deepak Rana<span className="text-primary animate-pulse">.</span>
             <br />
-            not just websites
+            <span className="text-3xl md:text-5xl lg:text-6xl text-muted-foreground mt-4 block">
+              building{" "}
+              <span className="glitch text-primary italic mr-3 md:mr-4" data-text="scalable">
+                scalable
+              </span>
+              systems
+              <br />
+              not just websites
+            </span>
           </h1>
-          <p className="text-muted-foreground max-w-xl font-mono text-base md:text-lg">
+          <p className="text-white max-w-2xl font-mono text-base md:text-lg">
             Full-stack developer // Cloud Engineer // Problem solver.
             <br />
             Optimizing for latency, building for scale.
@@ -37,7 +48,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="mt-10 flex gap-6"
+          className="mt-10 flex justify-center gap-6"
         >
           <div className="animate-float">
             <Server className="text-primary" size={28} />
@@ -50,7 +61,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        <div className="mt-10 flex flex-wrap gap-4">
+        <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
             href="#projects"
             className="bg-primary text-primary-foreground px-8 py-4 font-bold uppercase hover:translate-x-1 hover:-translate-y-1 transition-transform hard-shadow active:shadow-none active:translate-x-0 active:translate-y-0"
@@ -59,7 +70,7 @@ export default function Hero() {
           </a>
           <a
             href="#contact"
-            className="border border-border px-8 py-4 font-mono text-sm hover:bg-secondary transition-colors"
+            className="bg-black border border-border px-8 py-4 font-mono text-sm hover:bg-secondary transition-colors"
           >
             GET_CONTACT.SH
           </a>

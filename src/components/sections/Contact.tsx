@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin, FileDown } from "lucide-react";
 import { useState } from "react";
 
 export default function Contact() {
@@ -54,6 +54,14 @@ export default function Contact() {
             >
               <Linkedin size={16} />
               LinkedIn
+            </a>
+            <a
+              href="/DeepakCV.pdf"
+              download
+              className="bg-primary text-primary-foreground px-6 py-3 font-bold uppercase text-sm hover:translate-x-1 hover:-translate-y-1 transition-transform hard-shadow active:shadow-none active:translate-x-0 active:translate-y-0 flex items-center gap-2"
+            >
+              <FileDown size={16} />
+              Download CV
             </a>
           </div>
         </motion.div>

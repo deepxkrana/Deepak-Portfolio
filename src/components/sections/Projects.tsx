@@ -5,7 +5,7 @@ const projects = [
   {
     name: "Rank",
     problem: "Distributed state synchronization for edge functions.",
-    stack: ["Go", "Redis", "AWS"],
+    stack: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React", "Node.js", "Supabase Auth", "PostgreSQL","GCP"],
     status: "BUILDING" as const,
     github: "https://github.com/deepxkrana/Rank-P2",
     demo: "https://rank-p2.vercel.app/",

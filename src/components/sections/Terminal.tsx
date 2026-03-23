@@ -37,9 +37,9 @@ export default function Terminal() {
               <span className="text-accent">~</span>{" "}
               <span className="text-primary">status</span>
             </p>
-            <p className="text-foreground/80">System: Operational</p>
+            <p className="text-foreground/80">System: Building</p>
             <p className="text-foreground/80">
-              Current_Focus: Building_Distributed_Systems
+              Current_Focus: Rank
             </p>
             <p className="text-foreground/80">GitHub_Activity: Active</p>
             <p className="text-foreground/80">Local_Time: {time}</p>

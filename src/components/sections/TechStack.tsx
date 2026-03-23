@@ -21,35 +21,29 @@ export default function TechStack() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.4 }}
-              className={`relative z-10 w-full ${
+              className={`relative z-10 w-full flex flex-col items-center ${
                 idx === 0
-                  ? "md:text-left"
+                  ? "md:items-start"
                   : idx === 1
-                    ? "md:text-center"
-                    : "md:text-right"
+                    ? "md:items-center"
+                    : "md:items-end"
               }`}
             >
-              <h3 className="text-xl font-bold mb-6 uppercase border-l-2 border-primary pl-4 inline-block">
-                {cat.title}
-              </h3>
-              <div
-                className={`space-y-3 md:text-left ${
-                  idx === 0
-                    ? ""
-                    : idx === 1
-                      ? "md:mx-auto w-fit"
-                      : "md:ml-auto w-fit md:translate-x-4"
-                }`}
-              >
-                {cat.items.map((item) => (
-                  <div
-                    key={item}
-                    className="group flex items-center justify-start gap-3 font-mono text-sm text-muted-foreground hover:text-accent cursor-default transition-colors"
-                  >
-                    <div className="w-2 h-2 bg-border group-hover:bg-accent transition-colors" />
-                    {item}
-                  </div>
-                ))}
+              <div className="w-fit">
+                <h3 className="text-xl font-bold mb-6 uppercase border-l-2 border-primary pl-4 inline-block md:block">
+                  {cat.title}
+                </h3>
+                <div className="space-y-3">
+                  {cat.items.map((item) => (
+                    <div
+                      key={item}
+                      className="group flex items-center justify-start gap-3 font-mono text-sm text-muted-foreground hover:text-accent cursor-default transition-colors"
+                    >
+                      <div className="w-2 h-2 bg-border group-hover:bg-accent transition-colors" />
+                      {item}
+                    </div>
+                  ))}
+                </div>
               </div>
             </motion.div>
           ))}
